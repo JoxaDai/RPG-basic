@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+  <section>
+
+    <!-- Affichage des stats joueur au sein de la page html-->
+
+
+    <p>Or possèder: <span id="current-gold">0</span></p>
+    <button onclick="main()">Mine</button>
+    <button onclick="addEnergy()">Obtenir Boisson d'energie (100 gold)</button>
+    <button onclick="addEnergy()">Obtenir Canette de Pepsi (180 gold)</button>
+    <p id="info"></p>
+  </section>
+  <section id="statistics">
+    <div>
+      <h3>Statistics</h3>
+      <p>Level: <span id="level"></span></p>
+      <p>Expérience total: <span id="totalExp"></span></p>
+      <p>Vie: <span id="currentHp"></span>/<span id="maxHp"></span></p>
+      <p>Energie (mana): <span id="currentEnergy"></span>/<span id="maxEnergy"></span></p>
+      <p>Or: <span id="gold"></span></p>
+      <p>Diamants: <span id="diamonds"></span></p>
+    </div>
+
+    <!--Action que le joueur peut réaliser-->
+    <div>
+      <h3>Choix compétences</h3>
+      <p>Corps a corps: <span id="fighting"></span></p>
+      <p>Sort de magie: <span id="spellcasting"></span></p>
+      <p>Archery: <span id="archery"></span></p>
+      <p>Pêcher du poisson: <span id="fishing"></span></p>
+      <p>Miner des ressources: <span id="mining"></span></p>
+      <p>Objet obtenu: <span id="crafting"></span></p>
+    </div>
+  </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
